@@ -1,46 +1,107 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&display=swap');
 *{
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  color: black;
   margin:0;
   padding:0;
 
+}
+
+.column{
+  float:left;
+  width:23.4%;
+  text-align:center;
+  border: 2px solid #000000;
+  background-color:lightblue;
+
+  padding-bottom: 10px;
+  margin:7px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button{
+float:center;
+display:inline-block;
+background-color:grey;
+color: black;
+padding: 10px;
+width: 200px;
+text-align: center;
+}
+.navbar{
+  color:darkgoldenrod;
+  justify-content:space-between;
+}
+.shop-product{
+  color:blue;
+  text-align:center;
+  font-family: 'Poppins', sans-serif
+}
+header{
+  text-align:center;
+  margin-bottom:30px;
+}
+.product-container{
+  display:flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 img{
   border: 2px solid #000000;
   margin:12px;
 }
-.column{
-    float:left;
-    width:23.4%;
-    text-align:center;
-    border: 2px solid #000000;
-    background-color:lightskyblue;
- 
-    padding-bottom: 10px;
-    margin:7px;
+.product-item img{
+  width: 100%;
+  height:200px;
+  object-fit:contain;
 }
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+#cart-items{
+  margin-bottom: 10px;
+  background-color:lightblue;
+}
 
-.button{
-  float:center;
-  display:inline-block;
-  background-color:grey;
-  color: black;
-  padding: 10px;
-  width: 200px;
-  text-align: center;
+#subtotal{
+  text-align: right;
+  margin-bottom: 10px;
 }
-.navbar{
-    color:darkgoldenrod;
-    justify-content:space-between;
+
+#checkout-btn{
+ display: block;
+ width:100%;
+ padding: 10px;
+ background-color:blue;
+ color: #fff;
+ border:none;
+ border-radius: 4px;
+ cursor:pointer;
 }
-.shop-product{
-    color:blue;
-    text-align:center;
-    font-family: 'Poppins', sans-serif
+#checkout-btn:hover{
+  background-color:lightblue;
+}
+input{
+  padding: 6px;
+  width:200px;
+  margin: 8px;
+  font-weight: bold;
+  border-color:black;
+  align-items:last baseline;
+  background-color:blue;
+}
+#searchResults{
+  margin-top:10px;
+}
+
+#searchResults{
+  margin-top: 10px;
+}
+
+.material-symbols-outlined{
+  font-variation-settings:'FILL' blue ,'wght' 400,'Grad'0,'opsz'48
 }
